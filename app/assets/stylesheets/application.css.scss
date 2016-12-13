@@ -32,6 +32,7 @@ h1,h2,h3 {
 
 .navbar {
     border: none;
+
     
     }
     
@@ -43,4 +44,20 @@ h1,h2,h3 {
     padding-bottom: 100px;
 }
 
+.navbar-default .navbar-brand {
+        color: #FAF3F3;
+    }
     
+.navbar-default .navbar-nav > li > a {
+        color: #FAF3F3;
+    }
+    
+.navbar-default .navbar-brand:hover {
+    color: #FAF3F3;
+    opacity: 0.75;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #FAF3F3;
+    opacity: 0.75;
+}
