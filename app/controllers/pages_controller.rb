@@ -17,4 +17,7 @@ class PagesController <ApplicationController
     def learn3
     end
     
+    def learn4
+    end
+
 end

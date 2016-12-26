@@ -32,12 +32,15 @@ h1,h2,h3 {
         
 }
 
+// navbar styles
+
 .navbar {
     border: none;
 
-    
     }
-    
+
+
+
 .home-callout {
     
     color: #F6F5F2;
@@ -60,3 +63,25 @@ h1,h2,h3 {
     font-weight: 800;
 }
 
+// tables
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    vertical-align: middle;
+}
+
+th, td {
+    padding: 5px;
+    text-align: center;
+}
+
+
+.inbetween {
+    font-style: italic;
+}
+
+
+.tabelka {
+    margin-left: 10%
+}
