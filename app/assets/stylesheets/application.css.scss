@@ -66,31 +66,42 @@ h1,h2,h3 {
 
 // tables
 
+* {
+    line-height: 100%;
+}
+
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
-    vertical-align: middle;
+    vertical-align: top;
+    margin-top: 10px;
 }
 
 th, td {
     padding: 5px;
-    text-align: center;
+    text-align: left;
 }
 
+th {
+    text-align: center;
+    font-variant: small-caps;
+}
 
 .inbetween {
-    font-style: italic;
+    text-align: center;
+    font-variant: small-caps;
+    color: #995e05;
 }
 
 
 .tabelka {
-    margin-left: 10%
+    margin-left: 10%;
+    margin-bottom: 10%;
 }
 
 .firstrow {
-    padding: 5px;
+    padding: 10px;
     text-align: left;
-    margin-left: 5%;
     vertical-align: top;
     line-height: 100%;
 }
