@@ -2,14 +2,178 @@
 
 <table style="width:75%", class="table-condensed tabelka">
     <tr>
-        <th>Tag</th>
+        <th colspan= "2">Tag</th>
         <th>Function</th>
     </tr>
     <tr class="inbetween">
-        <td colspan= "2">General</td>
+        <td colspan= "3">General</td>
     </tr>
     <tr>
-        <td> &lt;link type="text/css" rel="stylesheet" href="stylesheet.css"/&gt;</td>
-        <td>The CSS introduction in .html file (in head)</td>
+        <td colspan="2"> &lt;link type="text/css" rel="stylesheet" href="stylesheet.css"/&gt;</td>
+        <td>The CSS introduction in .html file (in head)<span style="color: hotpink"> it's also a self closing tag!</span></td>
     </tr>
+    <tr>
+        <td colspan="2"><p>class &#123; color: blue;</p>
+            <p>&#125;</p>
+        </td>
+        <td>Changing colors, #hex for hexadecimal value <a href="http://www.hexcolortool.com/">Hex color tool</a></td>
+    </tr>
+    <tr>
+        <td colspan="2"><p>class &#123; font-family: cursive, some other, some other;</p>
+            <p>&#125;</p>
+        </td>
+        <td>Changing font family, popular (most basic) options are serif, sans-serif and cursive
+        - add other options after a coma for backup</td>
+    </tr>
+    <tr>
+        <td colspan="2"> font-size: Xpx;</td>
+        <td> Changing font size</td>
+    </tr>
+    <tr>
+        <td colspan="2"> font-size: Xem;</td>
+        <td> Em is like px, but relative for screen size and therefore better
+        for mobile devices. Valus are 1em, 0.5em, 2em and so on</td>
+    </tr>
+    <tr>
+        <td colspan="2">background-color: yellow;</td>
+        <td>Editing the background color</td>
+    </tr>
+    <tr>
+        <td colspan="2">/*Comment*/</td>
+        <td>CSS comments</td>
+    </tr>
+     <tr>
+        <td colspan="2">&lt;style&gt;&lt;/style&gt;</td>
+        <td>Putting CSS in .html</td>
+    </tr>
+    <tr class="inbetween">
+        <td colspan= "3">Background</td>
+    </tr>
+    <tr>
+        <td colspan="2">background-color: value;</td>
+        <td>Setting background color</td>
+    <tr>
+        <td colspan= "2">line-height: 70%;</td>
+        <td>Changing distance between lines, standart in a browser is around 110-120%</td>
+    </tr>
+    </tr>
+    <tr>
+        <td colspan="2">height: valuepx;</td>
+        <td>Setting height value</td>
+    </tr>
+    <tr>
+        <td colspan="2">width: valuepx;</td>
+        <td>Setting width value</td>
+    </tr>
+    <tr class="inbetween">
+        <td colspan= "3">Border</td>
+    </tr>
+    <tr>
+        <td colspan="2">border: 1px solid red;</td>
+        <td>Border values</td>
+    </tr>
+    <tr style="inbetween">
+        <td colspan= "3">Selectors</td>
+    </tr>
+    <tr>
+        <td class="firstrow">
+            &lt;body&gt;</br>
+            &nbsp;&lt;div&gt;</br>
+            &nbsp;&nbsp;&lt;div&gt;</br>
+            &nbsp;&nbsp;&nbsp;&lt;h3&gt;&lt;/h3&gt;</br>
+            &nbsp;&nbsp;&lt;/div&gt;</br>
+            &lt;/div&gt;</br>
+            &lt;/body&gt;</br>
+        </td>
+        <td class="firstrow">
+            div div h3 &#123; <br> 
+            </br>
+            color: blue;</br>
+            &#125;</td>
+        <td> Selecting a tag nested in other tags</td>
+    </tr>
+    <tr>
+        <td colspan= "2">*</td>
+        <td>Selects <em>every</em> element on the page</td>
+    </tr>
+    <tr>
+        <td class="firstrow">
+            <p>&lt;body&gt;</br>
+            &nbsp;&lt;div&gt;</br>
+            &nbsp;&nbsp;<strong>&lt;h3&gt;&lt;/h3&gt;</strong></br>
+            &nbsp;&nbsp;&nbsp;&lt;ul&gt;</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;&lt;/h3&gt;</br>
+            &nbsp;&nbsp;&nbsp;&lt;/li&gt;</br>
+            &nbsp;&nbsp;&lt;/ul&gt;</br>
+            &nbsp;&lt;/div&gt;</br>
+            &lt;/body&gt;</p>
+            </td>
+        <td class="firstrow">
+            <p>div &gt; h3 &#123;</br>
+            </br>
+        &nbsp;&nbsp;&nbsp;&nbsp;font-weight: bold;</br>
+            &#125;</p>
+            </td>
+        <td>Selecting not <em>every</em> every element nested inside a tag,</br> but noly these that are direct
+        childer of the tag</td>
+    </tr>
+    <tr>
+        <td class="firstrow">
+            &lt;div&gt;</br>
+            &nbsp;&lt;h1 class="newclass"&gt;&lt;/h1&gt;</br>
+            &nbsp; &nbsp;&lt;ul&gt;</br>
+            &nbsp;&nbsp;&nbsp;&lt;li&gt;</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;h3 class="newclass"&gt;&lt;/h3&gt;</br>
+            &nbsp;&nbsp;&nbsp;&lt;/li&gt;</br>
+            &nbsp;&nbsp;&lt;/ul&gt;</br>
+            &nbsp;&lt;/div&gt;</br>
+            </td>
+        <td class="firstrow">.newclass &#123;</br>
+        </br>
+         &nbsp;&nbsp;&nbsp;font-weight: bold;</br>
+        &#125;</td>
+        <td>Attributing a class to html elements, same class can be used for different html element type!</td>
+    </tr>
+        <tr>
+        <td class="firstrow">
+            &lt;div&gt;</br>
+            &nbsp;&lt;h1 id="newid"&gt;&lt;/h1&gt;</br>
+            &nbsp;&nbsp;&lt;ul&gt;</br>
+            &nbsp;&nbsp;&nbsp;&lt;li&gt;</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;&lt;/h3&gt; </br>
+            &nbsp;&nbsp;&nbsp;&lt;/li&gt;</br>
+            &nbsp;&nbsp;&lt;/ul&gt;</br>
+            &lt;/div&gt;
+            </td>
+        <td class="firstrow">#newid &#123;</br>
+        </br>
+        &nbsp;&nbsp;&nbsp;font-weight: bold;</br>
+        &#125;</td>
+        <td>Attributing an id to a certain element (usually only one)</td>
+    </tr>
+    <tr>
+        <td class="firstrow" colspan= "2">element:pseudoclass</br>
+        i.e. a:hover<br>
+        a:visited</br>
+        a:link
+        </td>
+        <td>Pseudoclasses added after selectors determine CSS for different states - i.e. hover, visited link etc.</td>
+    </tr>
+    <tr>
+        <td class="firstrow" colspan= "2">element:first-child</td>
+        <td>Peudoclass selecting only specific pointed element types, that are also first children of their parent tag </td>
+    </tr>
+    <tr>
+        <td class="firstrow" colspan= "2">element:nth-child(n)</td>
+        <td>Peudoclass selecting only specific pointed element types, that are also nth children of their parent tag </td>
+    </tr>
+    <tr>
+        <td class="inbetween" colspan= "3">Positioning</td>
+    </tr>
+    <tr>
+        <td class="firstrow" colspan= "2">display:block</br>display:inline-block</br>display:inline</br>dsiplay:none</td>
+        <td>Display values for positioning: The inline-block value allows you to put <br>several block elements on the same line. The inline value places all your elements next to one </br>another, but not as blocks: they don't keep their dimensions.</td>
+    </tr>
+    
 </table>
