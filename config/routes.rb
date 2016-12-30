@@ -7,5 +7,6 @@ Rails.application.routes.draw do
     get 'learn3', to: 'pages#learn3'
     get 'learn4', to: 'pages#learn4'
     get 'learn5', to: 'pages#learn5'
+    get 'learn6', to: 'pages#learn6'
     resources :contacts
 end
