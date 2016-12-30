@@ -20,4 +20,6 @@ class PagesController <ApplicationController
     def learn4
     end
 
+    def learn5
+    end
 end

@@ -25,8 +25,6 @@ h1,h2,h3 {
 
 
 .navbar, .home-callout {
-    
-
     background: #141E30; /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #141E30 , #243B55); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #141E30 , #243B55); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -37,24 +35,39 @@ h1,h2,h3 {
 
 .navbar {
     border: none;
-
+    margin-bottom: 20px;
     }
 
 
 
 .home-callout {
     
-    color: #F6F5F2;
+    color: #d4deed;
     margin-top: -20px;
     padding-top: 50px;
     padding-bottom: 100px;
 }
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #d4deed;
+}
+
+
+.navbar-default .navbar-toggle {
+    
+    border: 2px solid #d4deed;
+    
+   &:hover, &:focus {
+    
+    background-color: #141E30;  
+    opacity: 0.75;
+   } 
+}
 
 .navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a  {
-        color: #FAF3F3;
+        color: #d4deed;
         
         &:hover {
-            color: #FAF3F3;
+            color: #d4deed;
             opacity: 0.75;
         }
     }
@@ -105,4 +118,31 @@ th {
     vertical-align: top;
     line-height: 100%;
 }
-    
+ 
+// styles
+
+
+.bg-1 { 
+    background: #141E30; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #141E30 , #243B55); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #141E30 , #243B55); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #d4deed;
+}
+
+.bg-2 { 
+    background-color: #d4deed; /* font color of bg-1 */
+    color: #233752;
+}
+
+#MrComputer {
+    max-width: 15%;
+    height: auto;
+}
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.text-no-navbar {
+    margin-top: -20px;
+}
