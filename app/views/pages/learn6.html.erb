@@ -64,7 +64,7 @@
                     state2 = state.upcase
                     state.upcase!
                     puts = "Your name is #{first_name} #{last_name}. You come from #{city} in #{state}.</xmp></td>
-            <td>state = input by user, state2 = display of input. commend "!" setting an answer. </td>
+            <td>state = input by user, state2 = display of input in puts. commend "!" setting an answer. </td>
         </tr>
         <tr>
                     <td><xmp>if 1 > 2
@@ -123,6 +123,54 @@
             <td><xmp>!true # => false
             !false # => true</xmp></td>
             <td>! means not_value</td>
+        </tr>
+        <tr>
+            <td><xmp>print "Tell me what to thay?"
+            user_input = gets.chomp
+            user_input.downcase!
+            if user_input.include? "s"
+            print "It found s"
+            end</xmp></td>
+            <td>include? checks for a string part in a chosen string</td>
+        </tr>
+        <tr>
+            <td><xmp>print "Tell me what to thay?"
+            user_input = gets.chomp
+            user_input.downcase!
+            if user_input.include? "s"
+            user_input.gsub!(/s/, "th")
+            end
+            </xmp></td>
+            <td>gsub substitutes parts of the string,  ! commands the answer</td>
+        </tr>
+         <tr>
+            <td><xmp>counter = 1
+            while counter < 11
+            puts counter
+            counter = counter + 1
+            end
+            </xmp></td>
+            <td>while countes for multiples tate of if (loop)</td>
+        </tr>
+        <tr>
+            <td><xmp>counter += 1</br>counter -= 1</br>counter /= 1</br>counter *= 1
+            </xmp></td>
+            <td>Shortcut for counter = counter + 1</td>
+        </tr>
+        <tr>
+            <td><xmp>for num in 1...10</br>for num in 1..10</br>puts num</br>end
+            </xmp></td>
+            <td>Puts string for values 1-9 (three dots) or 1-10 (two dots)</td>
+        </tr>
+        <tr>
+            <td><xmp>print { "hello world!" }</xmp>
+            { stands for do } for end</td>
+            <td><xmp>i = 20
+            loop do
+            i -= 1
+            print "#{i}"
+            break if i <= 0
+            end</xmp></td>
         </tr>
     </tbody>
   </table>
