@@ -48,7 +48,7 @@
         </tr>
         <tr>
             <td>print "Ruby"</td>
-            <td>Displaying content on the screen</td>
+            <td>Displaying content on the screen, the difference between "puts" and print is that after puts there's a new line.</td>
         </tr>
         <tr>
             <td>variable= gets.chomp</td>
@@ -150,7 +150,15 @@
             counter = counter + 1
             end
             </xmp></td>
-            <td>while countes for multiples tate of if (loop)</td>
+            <td>while countes for multiples case of if (loop)</td>
+        </tr>
+        <tr>
+            <td><xmp>counter = 1
+            for counter in 1..50 do
+            print counter
+            counter = counter + 1
+            end</xmp></td>
+            <td>another way to express "while" </td>
         </tr>
         <tr>
             <td><xmp>counter += 1</br>counter -= 1</br>counter /= 1</br>counter *= 1
@@ -171,6 +179,113 @@
             print "#{i}"
             break if i <= 0
             end</xmp></td>
+        </tr>
+         <tr>
+            <td><xmp>  
+            loop do 
+            i -= 1
+            next if i % 2 == 1
+            print "#{i}"
+            end</xmp></td>
+            <td>Next skips a step of the loop if a cndition (i e. the number is odd.</td>
+        </tr>
+        <tr>
+            <td> my_array = [1, 2, 3, 4, 5]</td>
+            <td>Declaring an array (set of values)</td>
+        </tr>
+        <tr>
+            <td> my_array[index]</td>
+            <td>each item in array has an index - the first item has the index of 0, the 2nd - 1, the 3rd- 2 and so on.</br>Elements in arrays can be adressed by their indexes.</td>
+        </tr>
+        <tr>
+            <td><xmp>array.each do |x|
+            x += 10
+            print "#{x}"
+            end</xmp></td>
+            <td>.each signs an action to each element of an array</td>
+        </tr>
+         <tr>
+            <td><xmp>15.times {print "I'm  programmist"}</xmp></td>
+            <td>Performs an {action} X.times </td>
+        </tr>
+        <tr>
+            <td><xmp>words = text.split(" ")</xmp></td>
+            <td> .split method takes a string and divides it according to the instructions in ("") (in this case split after every space </br>
+            This way we get an array containing the elements of the string. </td>
+        </tr>
+        <tr>
+            <td><xmp>my_hash = { "name" => "Eric",</br>
+            "age" => 26,
+            "hungry?" => true
+             }</xmp></td>
+             <td>Hash is a set of keys with values put to them</td>
+        </tr>
+        <tr>
+            <td><xmp>newhashname = Hash.new()</xmp></td>
+            <td>method to add a new hash (Hash capitalized!)</br>in () we give a default value (that works i.e. if you want to access a non-existing</br>
+            key, it shows a default value - if it's a string in goes in ""!</td>
+        </tr>
+        <tr>
+            <td><xmp>pets = Hash.new
+            pets["Milo"] = "cat"</xmp></td>
+            <td>Adds new key- value pair to the hash</td>
+        </tr>
+        <tr>
+            <td><xmp>array.each { |element| puts element}</xmp></td>
+            <td>prints each element of an array - element is not a placeholder name, it actually should ready "element"</td>
+        </tr>
+        <tr>
+            <td><xmp>def method_name(parameter)
+            body
+            end
+            
+            method_name(argument)</xmp></td>
+            <td>Defying a method - a section of code designed to perform a specific task - after defying it we can always call i by its name</td>
+        </tr>
+        <tr>
+            <td><xmp>def method_name(parameter, *paremeter2)</xmp></td>
+            <td>* signalizes that some parameter might have more than one argument assigned = <b>splat argument</b></td>
+        </tr>
+        <tr>
+            <td><xmp>def method_name(parameter, parameter2)
+            return parameter 1 + parameter2
+            end</xmp></td>
+            <td>return is like puts, but allows us to process the content (i.e. mathematical equasions and so on)</td>
+        </tr>
+        <tr>
+            <td><xmp>object1 <=> object2</xmp></td>
+            <td>compares two objects - if the value is 1, object2 should come in front of object1</br>
+            if the value is 0, no object comes in front of the other</br>
+            if the value is -1, object1 comes in front of object2</td>
+        </tr>
+        <tr>
+            <td><xmp>def alphabetize(arr, rev=false)
+            end</xmp></td>
+            <td>In this line we set two parameters, second is a bootlean by default put to "false" - if when calling the method</br>
+            we don't specify the second parameter or argument ruby (in this case) assumes it's false</td>
+        </tr>
+        <tr>
+            <td><xmp>my_hash[key]</xmp></td>
+            <td>calling a certainkey (or "key") of a defined hash</td>
+        </tr>
+        <tr>
+            <td><xmp>no_nil_hash = Hash.new("It doesn't look like anything to me")</xmp></td>
+            <td>By creating new hash we put a default value to be displayed in the place of nil</td>
+        </tr>
+        <tr>
+            <td><xmp>my_symbol = :_symbol</xmp></br>
+            or alternativly <xmp>symbol: value (in new syntax)</xmp></td>
+            <td>Symbol - name needs to start with an underscore or a letter - symbols make good keys in a hash!</td>
+        </tr>
+        <tr>
+            <td><xmp>symbols.push(s.to_sym)</xmp></td>
+            <td>push puts some content to an array (in this case array is symbols - array needs to be craeted before</br>
+            s.to_sym - changes content of some hash from strings to symbols/ .intern does the same!</td>
+        </tr>
+        <tr>
+            <td><xmp>variable = hash_name.select do |key, value| value > X
+            end</xmp></td>
+            <td>Selects only keys with specific value</td>
         </tr>
     </tbody>
   </table>
